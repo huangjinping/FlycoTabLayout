@@ -2,10 +2,14 @@
 
 buildscript {
     repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter/' }
+        google()
+        mavenCentral()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:3.5.2'
 //        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
 //        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.2'
         // NOTE: Do not place your application dependencies here; they belong
@@ -14,11 +18,22 @@ buildscript {
 }
 
 allprojects {
+//    repositories {
+//        jcenter()
+////        maven {
+////            url "http://dl.bintray.com/h07000223/maven"
+////        }
+//    }
     repositories {
         jcenter()
-//        maven {
-//            url "http://dl.bintray.com/h07000223/maven"
-//        }
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.google.com' }
+        // 支付宝 SDK AAR 包所需的配置
+        google()
+        mavenCentral()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter/' }
+
     }
 }
 
