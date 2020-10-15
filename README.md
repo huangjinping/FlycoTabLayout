@@ -30,6 +30,7 @@ can be used freely with other widgets together.
     ```
 
 * SegmentTabLayout
+android x兼容  下载地址 https://raw.githubusercontent.com/huangjinping/FlycoTabLayout/master/FlycoTabLayout_Lib-release.aar
 
 ## Demo
 ![](https://github.com/H07000223/FlycoTabLayout/blob/master/preview_1.gif)
